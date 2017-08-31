@@ -31,7 +31,7 @@ Example of `fiat` parameters are `"USD"`, `"BRL"`, `"CAD"`, `"JPY"` or any other
 bittrex_module format placeholders are:
 
 * `{fiat_bal}` balance in selected fiat
-* `{fiat_btc}` balance in bitcoin
+* `{btc_bal}` balance in bitcoin
 * `{cursymbol}` current price change symbol according to last price
 * `{show_mode}` current showing format
 

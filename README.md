@@ -43,6 +43,8 @@ A good setup is having a format showing your BTC worth in local fiat, another on
 
 ## Donations:
 Thank you for using this module!
+
 If you feel like helping out:
-BTC 1KVUQB5QaRriSLRWPKWuqZaTEsaqzDAJHi
-IOC iqmW3t5qfM2bNa2n8KFNvadWf2T962NJsV
+
+* BTC 1KVUQB5QaRriSLRWPKWuqZaTEsaqzDAJHi
+* IOC iqmW3t5qfM2bNa2n8KFNvadWf2T962NJsV

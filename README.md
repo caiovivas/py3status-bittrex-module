@@ -1,6 +1,7 @@
 # py3status-bittrex-module
 A simple Bittrex module for py3status allowing the user to easily track account balances in real time on i3status bars.
-
+![Sample Image 1](https://i.gyazo.com/9091e1d188179a333314e799c51b182d.png)
+![Sample Image 2](https://i.gyazo.com/ef0790173530b92c69540130bde91f33.png)
 ## Dependencies:
 This module requires [python-bittrex wrapper](https://github.com/ericsomdahl/python-bittrex) by ericsomdahl
 

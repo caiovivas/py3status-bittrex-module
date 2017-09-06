@@ -70,14 +70,17 @@ class Py3status:
 	def __get_fiat(self):
 		if(self.fiat == "USD"):
 			return None
-		with urllib.request.urlopen("http://api.fixer.io/latest?base=USD") as url:
-			data = json.loads(url.read().decode())
-			return float(data["rates"][self.fiat])
+		data = self.__url_fetch_json("http://api.fixer.io/latest?base=USD")
+		return float(data["rates"][self.fiat])
 	
 	def __get_btc_usd(self):
-		with urllib.request.urlopen("https://api.coinmarketcap.com/v1/ticker/bitcoin/") as url:
+		data = self.__url_fetch_json("https://api.coinmarketcap.com/v1/ticker/bitcoin/")
+		return float(data[0]["price_usd"])
+
+	def __url_fetch_json(self, link):
+		with urllib.request.urlopen(link) as url:
 			data = json.loads(url.read().decode())
-			return float(data[0]["price_usd"])
+			return data
 
 	def __get_total_btc(self):
 		current_btc = 0
@@ -86,6 +89,8 @@ class Py3status:
 		for c in wallet_data["result"]:
 			if(float(c["Balance"]) <= 0):
 				continue
+			if(c["Currency"] == "BTC"):
+				current_btc += float(c["Balance"])
 			value = 0.0
 			for m in market_data["result"]:
 				if(m["MarketName"] == ("BTC-"+c["Currency"])):

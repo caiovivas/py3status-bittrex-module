@@ -31,7 +31,7 @@ Example of `fiat` parameters are `"USD"`, `"BRL"`, `"CAD"`, `"JPY"` or any other
 bittrex_module format placeholders are:
 
 * `{fiat_bal}` balance in selected fiat
-* `{fiat_btc}` balance in bitcoin
+* `{btc_bal}` balance in bitcoin
 * `{cursymbol}` current price change symbol according to last price
 * `{show_mode}` current showing format
 
@@ -40,3 +40,11 @@ bittrex_module format placeholders are:
 Once properly configured, bittrex_module can have it's showing formats alternated by clicking with the left mouse button, and updated by either clicking or scrolling.
 
 A good setup is having a format showing your BTC worth in local fiat, another one showing the balance in BTC values and the third one hiding any values in case you need to publicly use the computer or in order to take screenshots/record the screen.
+
+## Donations:
+Thank you for using this module!
+
+If you feel like helping out:
+
+* BTC 1KVUQB5QaRriSLRWPKWuqZaTEsaqzDAJHi
+* IOC iqmW3t5qfM2bNa2n8KFNvadWf2T962NJsV
